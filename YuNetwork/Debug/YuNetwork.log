@@ -1,0 +1,26 @@
+﻿La génération a démarré 22/02/2015 23:10:36.
+     1>Projet "C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\YuNetwork\YuNetwork.vcxproj" sur le nœud 2 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ClientsManager.cpp
+         ClientsManager.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\Debug\YuNetwork.lib" /NOLOGO Debug\ClientHandler.obj
+         Debug\ClientsManager.obj
+         Debug\Container.obj
+         Debug\MultiContainer.obj
+         Debug\Object.obj
+         Debug\ServerHandler.obj
+         Debug\StringStream.obj
+         Debug\YuClient.obj
+         Debug\YuPacket.obj
+         Debug\YuPacketManager.obj
+         Debug\YuSocket.obj
+     1>YuClient.obj : warning LNK4221: Ce fichier objet ne dÚfinit pas de symboles publics jusqu'ici non dÚfinis. Par consÚquent, il ne sera utilisÚ par aucune opÚration de lien utilisant cette bibliothÞque
+     1>StringStream.obj : warning LNK4221: Ce fichier objet ne dÚfinit pas de symboles publics jusqu'ici non dÚfinis. Par consÚquent, il ne sera utilisÚ par aucune opÚration de lien utilisant cette bibliothÞque
+     1>MultiContainer.obj : warning LNK4221: Ce fichier objet ne dÚfinit pas de symboles publics jusqu'ici non dÚfinis. Par consÚquent, il ne sera utilisÚ par aucune opÚration de lien utilisant cette bibliothÞque
+         YuNetwork.vcxproj -> C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\Debug\YuNetwork.lib
+     1>Génération du projet "C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\YuNetwork\YuNetwork.vcxproj" terminée (Build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:00.46

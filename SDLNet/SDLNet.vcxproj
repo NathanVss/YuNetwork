@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{99E0E634-79CA-49D2-BA18-F7BADE617C93}</ProjectGuid>
+    <RootNamespace>SDLNet</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\Nathan\Documents\Visual Studio 2012\Projects;C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\Dependecies\SDL2_image-2.0.0\lib\x86;C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\Dependecies\glew\lib\Release\Win32;C:\Users\Nathan\Documents\Visual Studio 2012\Projects\Noxel-OpenGL\Debug;C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\Debug;C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\dependecies\SDL2_net-2.0.0\lib\x86;C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\dependecies\SDL2-2.0.3\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Users\Nathan\Documents\Visual Studio 2012\Projects;C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\Dependecies\SDL2_image-2.0.0\lib\x86;C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\Dependecies\SDL2-2.0.3\lib\x86;C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\Dependecies\SDL2_net-2.0.0\lib\x86;C:\Users\Nathan\Documents\Visual Studio 2012\Projects\Noxel-OpenGL\Release;C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\Release;C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\dependencies\SDL2_net-2.0.0\lib\x86;C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\dependencies\SDL2-2.0.3\lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2_net.lib;SDL2.lib;SDL2main.lib;YuNetwork.lib;YuEngine.lib;opengl32.lib;SDL2_image.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2_net.lib;SDL2.lib;SDL2main.lib;YuNetwork.lib;YuEngine.lib;opengl32.lib;SDL2_image.lib;glew32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ControllerClientPackets.cpp" />
+    <ClCompile Include="ControllerClientPlayer.cpp" />
+    <ClCompile Include="ControllerServerPlayer.cpp" />
+    <ClCompile Include="ControllerSinglePlayer.cpp" />
+    <ClCompile Include="IControllerPlayer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MainScene.cpp" />
+    <ClCompile Include="MyContainer.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="Packets.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayersManager.cpp" />
+    <ClCompile Include="Server.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ControllerClientPackets.h" />
+    <ClInclude Include="ControllerClientPlayer.h" />
+    <ClInclude Include="ControllerServerPlayer.h" />
+    <ClInclude Include="ControllerSinglePlayer.h" />
+    <ClInclude Include="IControllerPlayer.h" />
+    <ClInclude Include="MainScene.h" />
+    <ClInclude Include="MyContainer.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="Packets.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayersManager.h" />
+    <ClInclude Include="Server.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

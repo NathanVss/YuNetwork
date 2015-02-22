@@ -1,0 +1,44 @@
+﻿La génération a démarré 18/02/2015 23:20:04.
+     1>Projet "C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\YuNetwork\YuNetwork.vcxproj" sur le nœud 3 (Build cible(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ClientsManager.cpp Container.cpp MultiContainer.cpp Object.cpp YuClient.cpp YuClientSocket.cpp YuHostSocket.cpp YuPacket.cpp YuPacketManager.cpp
+         ClientsManager.cpp
+     1>ClientsManager.cpp(41): warning C4018: '<' : incompatibilité signed/unsigned
+         Container.cpp
+         MultiContainer.cpp
+         Object.cpp
+         YuClient.cpp
+         YuClientSocket.cpp
+     1>YuClientSocket.cpp(89): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110) : voir la déclaration de 'strcpy'
+     1>YuClientSocket.cpp(164): warning C4018: '<' : incompatibilité signed/unsigned
+         YuHostSocket.cpp
+     1>YuHostSocket.cpp(107): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(110) : voir la déclaration de 'strcpy'
+     1>YuHostSocket.cpp(171): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
+         YuPacket.cpp
+         YuPacketManager.cpp
+     1>YuPacketManager.cpp(20): warning C4018: '<' : incompatibilité signed/unsigned
+     1>YuPacketManager.cpp(31): warning C4101: 'e' : variable locale non référencée
+     1>YuPacketManager.cpp(46): warning C4018: '<' : incompatibilité signed/unsigned
+     1>YuPacketManager.cpp(89): warning C4018: '<' : incompatibilité signed/unsigned
+     1>YuPacketManager.cpp(103): warning C4018: '<' : incompatibilité signed/unsigned
+     1>YuPacketManager.cpp(173): warning C4018: '<' : incompatibilité signed/unsigned
+     1>YuPacketManager.cpp(192): warning C4018: '<' : incompatibilité signed/unsigned
+     1>YuPacketManager.cpp(223): warning C4800: 'int' : valeur forcée à la valeur booléenne 'true' ou 'false' (avertissement sur les performances)
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\Lib.exe /OUT:"C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\Release\YuNetwork.lib" /NOLOGO /LTCG Release\ClientsManager.obj
+         Release\Container.obj
+         Release\MultiContainer.obj
+         Release\Object.obj
+         Release\YuClient.obj
+         Release\YuClientSocket.obj
+         Release\YuHostSocket.obj
+         Release\YuPacket.obj
+         Release\YuPacketManager.obj
+         YuNetwork.vcxproj -> C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\Release\YuNetwork.lib
+     1>Génération du projet "C:\Users\Nathan\Documents\Visual Studio 2012\Projects\SDLNet\YuNetwork\YuNetwork.vcxproj" terminée (Build cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:02.71
