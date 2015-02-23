@@ -76,6 +76,7 @@
   <ItemGroup>
     <ClCompile Include="ControllerClientPackets.cpp" />
     <ClCompile Include="ControllerClientPlayer.cpp" />
+    <ClCompile Include="ControllerServerPackets.cpp" />
     <ClCompile Include="ControllerServerPlayer.cpp" />
     <ClCompile Include="ControllerSinglePlayer.cpp" />
     <ClCompile Include="IControllerPlayer.cpp" />
@@ -91,6 +92,7 @@
   <ItemGroup>
     <ClInclude Include="ControllerClientPackets.h" />
     <ClInclude Include="ControllerClientPlayer.h" />
+    <ClInclude Include="ControllerServerPackets.h" />
     <ClInclude Include="ControllerServerPlayer.h" />
     <ClInclude Include="ControllerSinglePlayer.h" />
     <ClInclude Include="IControllerPlayer.h" />

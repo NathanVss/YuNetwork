@@ -50,6 +50,9 @@
     <ClCompile Include="ControllerClientPackets.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
+    <ClCompile Include="ControllerServerPackets.cpp">
+      <Filter>Fichiers sources</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainScene.h" />
@@ -64,5 +67,6 @@
     <ClInclude Include="PlayersManager.h" />
     <ClInclude Include="ControllerServerPlayer.h" />
     <ClInclude Include="ControllerClientPackets.h" />
+    <ClInclude Include="ControllerServerPackets.h" />
   </ItemGroup>
 </Project>

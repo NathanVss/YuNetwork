@@ -78,8 +78,6 @@ void MainScene::loop() {
 		ticks++;
 
 		if(multi) {
-
-
 			clientHandler->update();
 
 			if(clientHandler->getClient()->isConnected()) {
